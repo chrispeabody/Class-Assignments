@@ -1,0 +1,14 @@
+This class is Introduction to Evolutionary Algorithms (cs5401).
+
+I am quite proud of the work in this class. This was the first time I created really extensive programs
+for an assignment using python. This class helped me learn the language. In later classes, you can
+easily see how my python skills have grown. In this class, I wrote most of my assignments using one
+main .py file, which got cluttered. In later classes, particularly AI, I began structuring my files better
+for readability.
+
+Aside from that, these programs work very well, and are extremely complex. Perfect for showcasing some of the 
+abilities I've picked up from this class. In the first assignment series, we created a SAT-Solver EA. In the second
+assignment series, we created very simple "AI's" for pacman, and eventually ghosts, to compete in games.
+
+All the assignments have a nice file structure for input files, configuration files, output/log files, and statistical
+analysis. Each of these things became progressively more complex as each assignment series continued.
