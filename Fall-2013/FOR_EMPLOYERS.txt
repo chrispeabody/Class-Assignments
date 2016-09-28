@@ -1,0 +1,3 @@
+These two classes, Introduction to Programing (cs53) and it's lab (cs54), show the beginning of my college career.
+Most of these programs are simple, but near the end of cs53, some of them take on more complex forms as we learn
+about file structure and string manipulation.
