@@ -1,0 +1,6 @@
+My main programming class for Spring 2014 was Data Structures (cs153 at the time).
+In this class we used C++ to impliment certain data structures from the ground up. The various assignments
+will typically say which data structure it's implimenting in the title. 
+
+The backup folder appears to have been for temporary use, I believe those same files are replicated
+elsewhere in this class section.
