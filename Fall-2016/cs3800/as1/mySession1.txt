@@ -1,0 +1,66 @@
+Script started on Thu 08 Sep 2016 07:24:34 PM CDT
+]0;cgpzbd@rc06ucs213: ~/SDRIVE/cs3800/as1cgpzbd@rc06ucs213:~/SDRIVE/cs3800/as1$ sh mySession1.shls[Ksh mySession1.shls[Kcd SDRIVE/cs3800/as1exit[Kscript mySession.shexit[Kcd SDRIVE/cs3800/as1ls[Ksh mySession1.sh             assignment1.sh
+[H[2J       Select A Menu Option       
+----------------------------------
+1- Ancestry History
+2- Who Is Online
+3- What Process Any Use Is Running
+4- Exit
+----------------------------------
+1
+ 18793
+  |
+ 18679
+  |
+ 18678
+  |
+ 18677
+  |
+ 13459
+  |
+ 13458
+  |
+ 13373
+  |
+ 1271
+  |
+ 1
+       Select A Menu Option       
+----------------------------------
+1- Ancestry History
+2- Who Is Online
+3- What Process Any Use Is Running
+4- Exit
+----------------------------------
+2
+cgpzbd
+fp6w3
+       Select A Menu Option       
+----------------------------------
+1- Ancestry History
+2- Who Is Online
+3- What Process Any Use Is Running
+4- Exit
+----------------------------------
+3
+1) cgpzbd
+2) fp6w3
+Select a currently online user:
+2
+fp6w3    14748     1  0 18:43 ?        00:00:01 /usr/bin/perl /usr/bin/dfshack /mnt/dfs/fp6w3/Users/fp6w3 /nethome/users/fp6w3 -o nonempty,dev,suid
+fp6w3    14794 14737  0 18:43 ?        00:00:00 sshd: fp6w3@pts/15  
+fp6w3    14795 14794  0 18:43 pts/15   00:00:00 -bash
+fp6w3    16948 14795 99 19:06 pts/15   00:19:19 a.out
+cgpzbd   18849 18793  0 19:25 pts/16   00:00:00 grep fp6w3
+       Select A Menu Option       
+----------------------------------
+1- Ancestry History
+2- Who Is Online
+3- What Process Any Use Is Running
+4- Exit
+----------------------------------
+4
+]0;cgpzbd@rc06ucs213: ~/SDRIVE/cs3800/as1cgpzbd@rc06ucs213:~/SDRIVE/cs3800/as1$ exit
+exit
+
+Script done on Thu 08 Sep 2016 07:25:33 PM CDT
