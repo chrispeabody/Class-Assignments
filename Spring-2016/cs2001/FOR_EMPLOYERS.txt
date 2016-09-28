@@ -1,0 +1,6 @@
+Note to employers:
+
+This class is currently missing assignments 4 through 10.
+This is because those assignments have a massive amount of files associated with them,
+and GitHub is being a hassle with a file upload limit. With more work, they can
+be uploaded later.
