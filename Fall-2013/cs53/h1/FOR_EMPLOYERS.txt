@@ -1,0 +1,2 @@
+This first assignment wasn't programming, rather, and introduction to breaking things
+down into multiple steps. A way of finding how to turn english instructions into potential algorithms.
