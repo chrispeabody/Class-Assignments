@@ -1,0 +1,9 @@
+These classes are currently on-going, and I plan to add in assignments as we complete them.
+
+We have Artificial Intelligence (cs5400), and Intro to Operating Systems (3800).
+
+Operating systems is relatively light on programming, so not many assignments will be uploaded for that series.
+However, Artificial Intelligence is quite heavy on assignments, so you should be able to expect many more to come.
+The coding done in AI is a good reflection of how I have improved in using Python, especially when it comes
+to code structure and efficiency. You can see effeciency changes between each assignment very cleary. 
+The first assignments, 1-4, improve and change drastically from file to file, improving efficiency and clarity.
