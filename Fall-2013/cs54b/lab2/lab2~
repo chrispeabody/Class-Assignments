@@ -1,0 +1,14 @@
+//Name: CHRIS PEABODY
+//Section: B
+//Date: 9/3/2013
+//Description: This program aims to aid in the ordering of pizza and soda
+//for Miners College in their annual picnic
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout<<"Waddup";
+
+}
