@@ -1,0 +1,92 @@
+Name: Chris Peabody
+Class: CS54, Section A
+
+Change a tire in under 30 minutes
+1. Get out and open the trunk
+2. Check if you have the required tools (Lug-wrench, jack, and spare tire)
+  a. If all of the items are present, go on to 3.
+  b. If not, break down and cry before calling road side assistance
+3. Put the jack under the car and jack it up
+4. Undo each lugnut on the tire until all of them are off
+5. Remove the tire from the car, and put the replacement tire in it's place
+6. Use the lug-wrench to fasten the new tire into place
+7. Put the gas to the floorboard and make it to class on time
+
+Convert decimal numbers to binary
+1. Create a value called output representing the finished product, let input
+represent the decimal number
+2. Check whether input is equal to or higher than 256
+  a. if so, set the first character in output to 1, subtract 256 from the input
+  b. else, set the first character in output to 0
+3. Check whether input is equal to or higher than 128
+  a. if so, set the second character in output to 1, subtract 128 from input
+  b. else, set the second character in output to 0
+4. Check whether input is equal to or higher than 64
+  a. if so, set the third character in output to 1, subtract 64 from input
+  b. else, set the third character in output to 0
+5. Check whether input is equal to or  higher than 32
+  a. if so, set the fourth character in output to 1, subtract 32 from input
+  b. else, set the fourth character in output to 0
+6. Check whether input is equal to or higher than 16
+  a. if so, set the fifth character in output to 1, subtract 16 from input
+  b. else, set the fifth character in out to 0
+7. Check whether input is equal to or higher than 8
+  a. if so, set the sixth character in output to 1, subtract 8 from input
+  b. else, set the sixth character in output to 0
+8. Check whether input is equal to or higher than 4
+  a. if so, set the seventh character in output to 1, subtract 4 from input
+  b. else, set the seventh character in output to 0
+9. Check whether input is equal to or higher than 1
+  a. if so, set the eigth character in output to 1
+  b. else, set the eigth character in output to 0
+(This may be able to be said in less lines, but this is the exact process to
+use)
+
+Add fractions
+1. Check whether the denominators of the fractions are the same
+  a. If not, multiply the numerator and denominator of the first fraction by
+the denominator of the second fraction, and multiply the numerator and
+denominator of the second fraction by the denominator of the first fraction.
+(Now the fractions should have the same denominator, althought the fraction
+may be horribley unsimplified)
+2. Create a new fraction
+3. Add the numerators of the first two fractions, and set the numerator of
+the new fraction to that value.
+4. Set the denominator of the new fraction to that of the other two
+fractions
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+[Accidentally did these problems. Decided to save them because why not?]
+
+Find the lexicographic difference of two words
+1. Compare the first letters
+  a. If they are the same, move to the next two letters, etc.
+  b. If they are different, find their numerical values
+2. Subtracts the numerical values and take the absolute values
+  (Alternatively, find which is higher, and subtracts the higher from the
+lower.)
+
+Direct the robot through the maze
+1. Sense if wall is in front
+  a. If there is, turn left, back to step 1
+  b. If there is not, go forward
+2. Check if goal is reached
+  a. If so, finish
+  b. If not, back to step 1
+(This will work assuming there are no portions that cause the robot to walk
+forward, turn completely around, walk back, and turn completely around
+again.)
+
+Help the students find their ID's
+1. Have one student pull an id out
+  a. If it is theirs, they leave the class
+  b. Otherwise, talk to a student to see if it is theirs
+    i. If it is theirs, trade it to them, and they leave the class, go
+       back to 1.
+    ii. If it is not theirs, go back to b. and talk to a different student
+2. Once there are not more students to pull id's out, then it's all done!
+
+(This was done assuming the students could not have just looked at the name
+on the id and given it to who owns it.)
+

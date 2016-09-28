@@ -1,0 +1,75 @@
+//Name: CHRIS PEABODY
+//Class: CS53 section A
+//Date: 9/3/2013
+//Purpose: To generate phone numbers for Moe's new company
+
+#include <iostream>
+using namespace std;
+
+//Remember, the government loves you and is always watching out for you. ALWAYS
+const short PNGF = 78;
+
+int main()
+{
+  string first; //Their first name
+  string last; //Their last name
+  short wav; //Eye color wavelength
+  float height; //Height in meters
+  bool gend; //Gender (0 = male, 1 = female)
+  
+  //abc-def-hijk
+  short d;
+  short e;
+  short f;
+  short hijk;
+  //^Takes their respective spots in the number
+  
+  //Aquire first and last name
+  cout<<"Welcome, friend, to Moe's super sweet phone number generator thingy!";
+  cout<<"\n\nWhat might your name be, huh?\nFirst: ";
+  cin>>first;
+  cout<<"Last: ";
+  cin>>last;
+  
+  //Aquire eye wavelength
+  cout<<"\nAlright, "<<first<<" Mc"<<last<<", let's get your";
+  cout<<" eye color. (475 for blue, 510 for green, 590 for orange)";
+  cout<<"\nColor code: ";
+  cin>>wav;
+  
+  //Aquire height
+  cout<<"\nOkay "<<first<<", how tall are you in meters?\nHeight: ";
+  cin>>height;
+  
+  //Aquire gender
+  cout<<"Now all we need is your gender, Mc"<<last<<".";
+  cout<<" (0 for male, 1 for female)\nGender: ";
+  cin>>gend;
+  
+  
+  //Below is only for style points
+  //Didn't entirely work, so I took it out
+  if (gend==0)
+  {
+    cout<<"\nOh.. I thought "<<first<<" was a girl name.";
+  }
+  else
+  {
+    cout<<"\nOh.. I thought you were a guy. Oops.";
+  }
+
+  
+  
+  //Generate number
+  d = ((static_cast<int>(height*wav))%1000)/100);
+  e = ((static_cast<int>(height*wav))%100)/10);
+  f = ((static_cast<int>(height*wav))%10);
+  hijk = (10*wav)+(PNGF*gend)+(static_cast<int>(height))^2;
+  
+  //Ouput
+  cout<<"Here are all your account details:\nName: "<<first<<" Mc"<<last;
+  cout<<"\nPhone Number: "<<wav<<"-"<<d<<e<<f<<"-"<<hijk;
+  cout<<"\n\nRemember to guzzle some beer before you make your next call!";
+  
+  return 0;
+}

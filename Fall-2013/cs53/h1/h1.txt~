@@ -1,0 +1,43 @@
+Name: Chris Peabody
+Class: CS54, Section A
+
+Change a tire in under 30 minutes
+1. 
+
+
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+[Accidentally did these problems. Decided to save them because why not?]
+
+Find the lexicographic difference of two words
+1. Compare the first letters
+  a. If they are the same, move to the next two letters, etc.
+  b. If they are different, find their numerical values
+2. Subtracts the numerical values and take the absolute values
+  (Alternatively, find which is higher, and subtracts the higher from the
+lower.)
+
+Direct the robot through the maze
+1. Sense if wall is in front
+  a. If there is, turn left, back to step 1
+  b. If there is not, go forward
+2. Check if goal is reached
+  a. If so, finish
+  b. If not, back to step 1
+(This will work assuming there are no portions that cause the robot to walk
+forward, turn completely around, walk back, and turn completely around
+again.)
+
+Help the students find their ID's
+1. Have one student pull an id out
+  a. If it is theirs, they leave the class
+  b. Otherwise, talk to a student to see if it is theirs
+    i. If it is theirs, trade it to them, and they leave the class, go
+       back to 1.
+    ii. If it is not theirs, go back to b. and talk to a different student
+2. Once there are not more students to pull id's out, then it's all done!
+
+(This was done assuming the students could not have just looked at the name
+on the id and given it to who owns it.)
+

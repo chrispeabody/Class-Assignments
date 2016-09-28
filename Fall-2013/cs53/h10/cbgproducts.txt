@@ -1,0 +1,7 @@
+4.00 comic book1
+8.00 comic book2
+10.00 comic book3
+10.00 action figure
+20.00 40-sided die
+15.00 cheeto value-pak
+100.00 limited release RadioMan #1
