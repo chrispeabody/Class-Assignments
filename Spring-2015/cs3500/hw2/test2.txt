@@ -1,0 +1,11 @@
+prog fibo ( a )
+blip
+  x is 1 !
+  y is 2 !
+  c is 3 !
+  loop $ c lt a $
+    x is x + y !
+    y is x - y !
+  pool
+  ret x !
+blorp

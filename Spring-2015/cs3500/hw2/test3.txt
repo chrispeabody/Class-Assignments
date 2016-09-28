@@ -1,0 +1,8 @@
+prog foo ( a , b )
+blip
+  if $ a gt b $
+    ret a !
+  ex
+    ret b !
+  fi
+blorp
