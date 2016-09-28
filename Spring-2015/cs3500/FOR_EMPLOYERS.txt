@@ -1,0 +1,4 @@
+This class was called Programming Languages & Translators (cs3500).
+In this class we focused primarily on how compilers parsed text, language grammars, and how to manipulated
+them to make them easier to work with. The assignments for this class were basic recreations of 
+various parsing methods.
