@@ -1,0 +1,3 @@
+Formula for best Ghost tree found in run 1:
+((rand((1.39928195994 / distOtherGhost), ((distPac * distOtherGhost) - distOtherGhost)) + (((distPac * distOtherGhost) / (distOtherGhost * (1.28773455783 * (1.8831644786 / 0.532106871864)))) + rand((distOtherGhost / (((distPac - 0.352699648357) / rand(distPac, distPac)) + (distOtherGhost * distPac))), (distPac - ((1.29427335803 + 0.667434650844) / rand(((distPac + distOtherGhost) - distOtherGhost), (distPac / (distPac * distPac)))))))) - ((rand(distOtherGhost, 0.413725429182) * distPac) - distPac))
+

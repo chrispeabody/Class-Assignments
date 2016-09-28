@@ -1,0 +1,7 @@
+Width: 15
+Height: 10
+Pill Density: 50.0
+Seed: 1677315913
+
+Run 1
+

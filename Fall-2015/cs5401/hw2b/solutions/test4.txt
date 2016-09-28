@@ -1,0 +1,2 @@
+Formula for best tree found in all runs:
+((distGhost / ((rand(rand(distPill, distGhost), distGhost) + (((distPill - 1.197079261) * rand(distPill, 0.161084681699)) * distPill)) * (1.36462551743 * (distPill * (distGhost * rand(distPill, distGhost)))))) * 1.46964911298)
