@@ -1,0 +1,40 @@
+        -:    0:Source:funcs.cpp
+        -:    0:Programs:2
+        -:    1:// -*- mode: c++ -*-
+        -:    2:/**
+        -:    3: * \file funcs.cpp
+        -:    4: *
+        -:    5: * \brief Decryption Helper Functions
+        -:    6: *
+        -:    7: * Provides a helper function for decrypting messages that were
+        -:    8: * encrypted using V.I.L.E.'s super secret encryption scheme
+        -:    9: */
+        -:   10:#include "funcs.h"
+        -:   11:
+        2:   12:string decrypt_message(int disk1, int disk2, int disk3, string encrypted)
+        -:   13:{
+        2:   14:  Rotor left(disk1);
+        2:   15:  Rotor middle(disk2);
+        2:   16:  Rotor right(disk3);
+        -:   17:
+        -:   18:  char current;
+        -:   19:
+        2:   20:  string result = "";
+        -:   21:
+        2:   22:  to_upper(encrypted);
+        -:   23:
+       88:   24:  for (unsigned int i = 0; i < encrypted.length(); i++)
+        -:   25:  {
+       86:   26:    current = encrypted[i];
+        -:   27:
+       86:   28:    if (current != '_')
+        -:   29:    {
+       70:   30:      current = left.decrypt(current);
+       70:   31:      current = middle.decrypt(current);
+       70:   32:      current = right.decrypt(current);
+        -:   33:    }
+       86:   34:    result += current;
+        -:   35:  }
+        -:   36:
+        2:   37:  return result;
+        3:   38:}

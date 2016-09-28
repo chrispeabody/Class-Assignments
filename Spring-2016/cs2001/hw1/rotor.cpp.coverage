@@ -1,0 +1,190 @@
+        -:    0:Source:rotor.cpp
+        -:    0:Programs:2
+        -:    1:// -*- mode: c++ -*-
+        -:    2:/**
+        -:    3: * \file rotor.cpp
+        -:    4: *
+        -:    5: * \brief Defines the Rotor class
+        -:    6: *
+        -:    7: * Provides a Rotor class that acts as a rotor in V.I.L.E.'s
+        -:    8: * super secret encryption scheme
+        -:    9: */
+        -:   10:#include "rotor.h"
+        -:   11:
+       11:   12:Rotor::Rotor(int num)
+        -:   13:{
+        -:   14:  // Save for when we need to decrypt
+       11:   15:  disk = num;
+        -:   16:
+        -:   17:  // Initial shift value
+       11:   18:  previous_input = 'A';
+       11:   19:}
+        -:   20:
+      340:   21:char Rotor::shift(char input)
+        -:   22:{
+      340:   23:  return (input + previous_input - 130) % 26 + 65;
+        -:   24:}
+        -:   25:
+      340:   26:char Rotor::decrypt(char input)
+        -:   27:{
+      340:   28:  char shifted = shift(input);
+        -:   29:  char output;
+        -:   30:
+        -:   31:  // Switch based on the disk that we're using. We only need to
+        -:   32:  // perform that one.
+      340:   33:  switch (disk)
+        -:   34:  {
+        -:   35:  case 1:
+       61:   36:    output = decrypt_disk1(shifted);
+       61:   37:    break;
+        -:   38:  case 2:
+       61:   39:    output = decrypt_disk2(shifted);
+       61:   40:    break;
+        -:   41:  case 3:
+       96:   42:    output = decrypt_disk3(shifted);
+       96:   43:    break;
+        -:   44:  case 4:
+       61:   45:    output = decrypt_disk4(shifted);
+       61:   46:    break;
+        -:   47:  case 5:
+       61:   48:    output = decrypt_disk5(shifted);
+       61:   49:    break;
+        -:   50:  }
+        -:   51:
+        -:   52:  // Record this, the most recently decrypted input, as our previous
+        -:   53:  // input. We need it to shift later.
+      340:   54:  previous_input = input;
+        -:   55:
+      340:   56:  return output;
+        -:   57:}
+        -:   58:
+       61:   59:char Rotor::decrypt_disk1(char input)
+        -:   60:{
+       61:   61:  return (input + 3) % 26 + 65;
+        -:   62:}
+        -:   63:
+       61:   64:char Rotor::decrypt_disk2(char input)
+        -:   65:{
+       61:   66:  return (input + 17) % 26 + 65;
+        -:   67:}
+        -:   68:
+       96:   69:char Rotor::decrypt_disk3(char input)
+        -:   70:{
+        -:   71:  char output;
+       96:   72:  switch (input)
+        -:   73:  {
+        -:   74:  case 'A':
+        7:   75:    output = 'H';
+        7:   76:    break;
+        -:   77:  case 'B':
+        4:   78:    output = 'U';
+        4:   79:    break;
+        -:   80:  case 'C':
+        5:   81:    output = 'I';
+        5:   82:    break;
+        -:   83:  case 'D':
+        3:   84:    output = 'V';
+        3:   85:    break;
+        -:   86:  case 'E':
+        4:   87:    output = 'N';
+        4:   88:    break;
+        -:   89:  case 'F':
+        2:   90:    output = 'W';
+        2:   91:    break;
+        -:   92:  case 'G':
+        2:   93:    output = 'C';
+        2:   94:    break;
+        -:   95:  case 'H':
+        2:   96:    output = 'K';
+        2:   97:    break;
+        -:   98:  case 'I':
+        4:   99:    output = 'E';
+        4:  100:    break;
+        -:  101:  case 'J':
+        3:  102:    output = 'X';
+        3:  103:    break;
+        -:  104:  case 'K':
+        3:  105:    output = 'Q';
+        3:  106:    break;
+        -:  107:  case 'L':
+        3:  108:    output = 'Z';
+        3:  109:    break;
+        -:  110:  case 'M':
+        7:  111:    output = 'O';
+        7:  112:    break;
+        -:  113:  case 'N':
+        4:  114:    output = 'V';
+        4:  115:    break;
+        -:  116:  case 'O':
+        3:  117:    output = 'M';
+        3:  118:    break;
+        -:  119:  case 'P':
+        2:  120:    output = 'B';
+        2:  121:    break;
+        -:  122:  case 'Q':
+        2:  123:    output = 'L';
+        2:  124:    break;
+        -:  125:  case 'R':
+        3:  126:    output = 'J';
+        3:  127:    break;
+        -:  128:  case 'S':
+        4:  129:    output = 'D';
+        4:  130:    break;
+        -:  131:  case 'T':
+        3:  132:    output = 'Y';
+        3:  133:    break;
+        -:  134:  case 'U':
+        2:  135:    output = 'F';
+        2:  136:    break;
+        -:  137:  case 'V':
+        8:  138:    output = 'R';
+        8:  139:    break;
+        -:  140:  case 'W':
+        4:  141:    output = 'A';
+        4:  142:    break;
+        -:  143:  case 'X':
+        5:  144:    output = 'G';
+        5:  145:    break;
+        -:  146:  case 'Y':
+        4:  147:    output = 'T';
+        4:  148:    break;
+        -:  149:  case 'Z':
+        3:  150:    output = 'M';
+        3:  151:    break;
+        -:  152:  }
+        -:  153:
+       96:  154:  return output;
+        -:  155:}
+        -:  156:
+       61:  157:char Rotor::decrypt_disk4(char input)
+        -:  158:{
+       61:  159:  return input % 2 ? input + 1 : input - 1;
+        -:  160:}
+        -:  161:
+       61:  162:char Rotor::decrypt_disk5(char input)
+        -:  163:{
+        -:  164:  char output;
+        -:  165:
+       61:  166:  if (input == 'A')
+        -:  167:  {
+        2:  168:    output = input;
+        -:  169:  }
+       59:  170:  else if (input == 'Z')
+        -:  171:  {
+        2:  172:    output = 'B';
+        -:  173:  }
+       57:  174:  else if (input % 3 == 0)
+        -:  175:  {
+       22:  176:    output = input + 3;
+        -:  177:  }
+       35:  178:  else if (input % 3 == 1)
+        -:  179:  {
+       15:  180:    output = input + 1;
+        -:  181:  }
+       20:  182:  else if (input % 3 == 2)
+        -:  183:  {
+       20:  184:    output = input - 1;
+        -:  185:  }
+        -:  186:
+       61:  187:  return output;
+        3:  188:}
