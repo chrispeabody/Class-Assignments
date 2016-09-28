@@ -1,6 +1,15 @@
-Note to employers:
+This class, Contemporary Programming (cs2001), taught us the basic syntax of several languages.
+Every two assignments, we switched to a new language. This helped solidify the understanding of
+programming logic between languages, making learning new syntaxes very easy given that we know
+how most languages tend to be made up. Another skill we learned here was unit testing, which was 
+required for many of the early assignments, and encouraged for the later ones.
 
-This class is currently missing assignments 4 through 10.
+This repository is currently missing assignments 4 through 10.
 This is because those assignments have a massive amount of files associated with them,
-and GitHub is being a hassle with a file upload limit. With more work, they can
-be uploaded later.
+and GitHub is being a hassle with a file upload limit. I will work on getting the rest of the files
+uploaded here. In the meantime, you can email me at cgpzbd@mst.edu if you would like to see the
+files sooner.
+
+This series at many times took a "fill in the blank" approach. Some assignments had the core flow
+already pre-written by the instructors, and our job was to create the functionality for each
+piece of code.
